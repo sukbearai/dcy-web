@@ -1,0 +1,19 @@
+{
+  "name": "@dcyjs/network",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@8.9.2",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "postinstall": "nuxi prepare"
+  },
+  "dependencies": {
+    "nuxt": "^3.8.0"
+  },
+  "devDependencies": {
+    "@dcyjs/eslint-config-custom": "workspace:^"
+  }
+}

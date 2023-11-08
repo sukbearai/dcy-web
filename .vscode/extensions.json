@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "antfu.iconify",
+    "antfu.unocss",
+    "antfu.goto-alias",
+    "csstools.postcss",
+    "dbaeumer.vscode-eslint",
+    "vue.volar",
+    "lllllllqw.jsdoc",
+    "MS-CEINTL.vscode-language-pack-zh-hans",
+    "streetsidesoftware.code-spell-checker",
+    "EditorConfig.EditorConfig",
+    "Nuxtr.nuxtr-vscode",
+    "bradlc.vscode-tailwindcss",
+    "antfu.vite"
+  ]
+}

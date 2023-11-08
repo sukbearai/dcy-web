@@ -1,0 +1,45 @@
+{
+  "name": "@dcyjs/materials",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@8.9.2",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "postinstall": "nuxi prepare",
+    "lint": "eslint .",
+    "typecheck": "vue-tsc --noEmit",
+    "generate:component": "turbo gen vue-component"
+  },
+  "dependencies": {
+    "@dcyjs/composables": "workspace:^",
+    "@dcyjs/utils": "workspace:^",
+    "beautify-qrcode": "^1.0.3",
+    "echarts": "^5.4.3",
+    "js-base64": "^3.7.5",
+    "quill-blot-formatter": "^1.0.5",
+    "vue-echarts": "^6.6.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^1.0.0-beta.27",
+    "@dcyjs/config": "workspace:^",
+    "@dcyjs/eslint-config-custom": "workspace:^",
+    "@dcyjs/plugins": "workspace:^",
+    "@iconify-json/carbon": "^1.1.21",
+    "@iconify-json/twemoji": "^1.1.12",
+    "@nuxtjs/color-mode": "^3.3.0",
+    "@pinia/nuxt": "^0.5.1",
+    "@turbo/gen": "^1.10.16",
+    "@unocss/eslint-config": "^0.56.5",
+    "@unocss/nuxt": "^0.56.5",
+    "@vite-pwa/nuxt": "^0.1.1",
+    "@vueuse/nuxt": "^10.5.0",
+    "consola": "^3.2.3",
+    "eslint": "^8.51.0",
+    "nuxt": "^3.8.0",
+    "pinia": "^2.1.7",
+    "typescript": "^5.2.2",
+    "vue-tsc": "^1.8.19"
+  }
+}

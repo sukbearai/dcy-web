@@ -1,0 +1,1 @@
+# @dcyjs/eslint-config-custom

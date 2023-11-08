@@ -1,0 +1,11 @@
+{
+  "name": "@dcyjs/eslint-config-custom",
+  "type": "module",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public"
+  }
+}

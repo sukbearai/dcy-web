@@ -1,0 +1,16 @@
+{
+  "name": "@dcyjs/middleware",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@8.9.2",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "postinstall": "nuxi prepare"
+  },
+  "dependencies": {
+    "nuxt": "^3.8.0"
+  }
+}
