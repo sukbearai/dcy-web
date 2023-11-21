@@ -1,23 +1,22 @@
 <script setup lang="ts">
 import { Chart, HelloWorld } from '@dcyjs/materials'
-import { CardWrap, GraphicsEditor, Qrcode, RichText } from '@dcyjs/materials/client'
+import { CardWrap, GraphicsEditor, PdfEmbed, Qrcode, RichText } from '@dcyjs/materials/client'
 import { downloadFormUrl } from '@dcyjs/utils'
 import { useFetcher } from '@dcyjs/network'
 import { getTodo } from '@/services'
 
-const id = ref(0)
+const pdfUrl = ref('https://dcyweb.oss-cn-qingdao.aliyuncs.com/images/AI%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%B8%82%E5%9C%BA%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A%EF%BC%882023%EF%BC%89%E8%BF%88%E5%90%91%E9%80%9A%E7%94%A8%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%EF%BC%8C%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%8B%89%E5%BC%80%E6%96%B0%E6%97%B6%E4%BB%A3%E5%BA%8F%E5%B9%95-%E6%B2%99%E5%88%A9%E6%96%87-2023-43%E9%A1%B5.pdf')
 
-const ready = computed(() => id.value !== 0)
-
-// 服务端数据
+// 服务端数据🤔️
 const { data } = await useFetcher<object>('/beers')
 
 // 客户端数据
+const id = ref(0)
+const ready = computed(() => id.value !== 0)
 const { data: todo, loading } = useRequest(() => getTodo({ id: id.value }), {
   ready,
   refreshDeps: [id],
 })
-
 const todoData = computed(() => todo.value && `getTodo的接口返回值: ${JSON.stringify(todo)}`)
 
 const online = useOnline()
@@ -79,7 +78,7 @@ function onDownload() {
     <div class="nesting">
       <div class="box">
         <div class="el my-2">
-          我是测试项目
+          author: @dcyjs
         </div>
       </div>
     </div>
@@ -101,7 +100,7 @@ function onDownload() {
     </div>
     <ASpace>
       <AButton type="primary">
-        learning space
+        demo
       </AButton>
       <AButton @click="onDownload">
         Download
@@ -181,6 +180,7 @@ function onDownload() {
         <div class="my-2">
           PDF预览组件
         </div>
+        <PdfEmbed :url="pdfUrl" height="760" />
       </div>
     </ClientOnly>
     <ClientOnly>

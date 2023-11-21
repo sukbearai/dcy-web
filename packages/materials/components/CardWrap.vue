@@ -1,7 +1,4 @@
 <script lang="ts" setup>
-import { ref } from 'vue'
-import { useToggle } from '@vueuse/core'
-
 const props = defineProps({
   loading: {
     type: Boolean,

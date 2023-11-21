@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { nextTick, ref } from 'vue'
 import VCharts from 'vue-echarts'
 import { use } from 'echarts/core'
 import { CanvasRenderer } from 'echarts/renderers'

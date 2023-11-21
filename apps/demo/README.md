@@ -1,19 +1,3 @@
-## 🌟 dcy-nuxt3-app
-
-在dcy-web中插入nuxt3应用
-
-## 🌈 usage
-
-> node >= 18.16.0
-
-```bash
-cd apps
-npx degit sukbearai/dcy-nuxt3-app my-project
-# change the name field in package.json
-cd ../
-pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
-```
-
 <p align="center">
 <img src="https://user-images.githubusercontent.com/11247099/140462375-7b7ac4db-35b7-453c-8a05-13d8d20282c4.png" width="600"/>
 </p>

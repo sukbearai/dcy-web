@@ -1,5 +1,5 @@
 {
-  "name": "learning-space",
+  "name": "demo",
   "type": "module",
   "version": "0.0.1",
   "private": true,
@@ -7,7 +7,7 @@
   "scripts": {
     "build": "nuxi build",
     "dev:pwa": "VITE_PLUGIN_PWA=true nuxi dev",
-    "dev": "nuxi dev -p 3008",
+    "dev": "nuxi dev -p 3009",
     "generate": "nuxi generate",
     "postinstall": "nuxi prepare",
     "start": "node .output/server/index.mjs",
@@ -16,6 +16,7 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "@dcyjs/composables": "workspace:^",
     "@dcyjs/materials": "workspace:^",
     "@dcyjs/network": "workspace:^",
     "@dcyjs/utils": "workspace:^"
