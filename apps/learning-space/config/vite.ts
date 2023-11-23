@@ -1,7 +1,9 @@
 import baseConfig from '@dcyjs/config/vite'
-import merge from 'deepmerge'
+import { mergeConfig } from 'vite'
+
 import type { ViteConfig } from 'nuxt/schema'
 
-const config: ViteConfig = {}
+const config: ViteConfig = {
+}
 
-export const vite = merge(baseConfig, config)
+export const vite = mergeConfig(baseConfig, config)
